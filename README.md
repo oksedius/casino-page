@@ -1,4 +1,4 @@
-# Casino Games Project
+# Casino Games 
 
 Сучасний веб-додаток для казино ігор з адаптивним дизайном та функцією пошуку.
 
@@ -15,9 +15,9 @@
 
 ## 🛠 Стек технологій
 
-- **HTML5** - семантична розмітка
+- **HTML** - семантична розмітка
 - **SCSS** - препроцесор CSS з вкладеністю та змінними
-- **JavaScript (ES6+)** - сучасний JS з модулями
+- **JavaScript** - сучасний JS з модулями
 - **Vite** - швидкий збірник та dev-сервер
 - **Google Fonts (Rubik)** - типографіка
 
@@ -40,16 +40,9 @@ casino-games/
 
 ## 🚀 Встановлення та запуск
 
-### Передумови
-
-Переконайтесь, що у вас встановлені:
-- [Node.js](https://nodejs.org/) (версія 16 або вище)
-- npm (зазвичай йде разом з Node.js)
-
 ### Крок 1: Клонування репозиторію
 ```bash
 git clone <your-repository-url>
-cd casino-games
 ```
 
 ### Крок 2: Встановлення залежностей
@@ -57,31 +50,14 @@ cd casino-games
 npm install
 ```
 
-### Крок 3: Додавання зображень
-
-Скопіюйте всі зображення ігор у папку `src/assets/images/`:
-- image_1650.png (банер hero секції)
-- Thumb.png (для каруселі)
-- logo.png, logo2.png, ... logo10.png (зображення ігор)
-
-### Крок 4: Запуск dev-сервера
+### Крок 3: Запуск dev-сервера
 ```bash
 npm run dev
 ```
 
 Проєкт буде доступний за адресою: `http://localhost:3000`
 
-### Крок 5: Збірка для продакшену
-```bash
-npm run build
-```
 
-Готові файли будуть у папці `dist/`
-
-### Перегляд production build
-```bash
-npm run preview
-```
 
 ## 📱 Адаптивність
 
@@ -136,22 +112,8 @@ $text-secondary: #8b9bb4;  // Вторинний текст
 $border-color: #2a3a4f;    // Бордери
 ```
 
-## 🎯 Додавання нових ігор
 
-Відредагуйте масив `gamesData` у файлі `src/js/main.js`:
-```javascript
-const gamesData = [
-  {
-    id: 11,
-    name: "Назва нової гри",
-    provider: "Провайдер",
-    image: "./src/assets/images/logo11.png",
-    category: "top" // або "recent"
-  },
-  // ... інші ігри
-];
 ```
-
 ## 📦 NPM Scripts
 ```bash
 npm run dev      # Запуск dev-сервера з hot reload
@@ -159,101 +121,5 @@ npm run build    # Збірка для продакшену
 npm run preview  # Перегляд production build
 ```
 
-## 🌐 Браузерна підтримка
 
-- ✅ Chrome (останні 2 версії)
-- ✅ Firefox (останні 2 версії)
-- ✅ Safari (останні 2 версії)
-- ✅ Edge (останні 2 версії)
-- ✅ iOS Safari 12+
-- ✅ Chrome Android
 
-## 🐛 Відомі обмеження
-
-- Пошук працює тільки з назвами ігор (не з провайдерами)
-- Немає серверної частини (всі дані статичні)
-- Play/Demo кнопки показують тільки alert (потребують інтеграції)
-
-## 🔧 Налаштування Vite
-
-Конфігурація знаходиться у файлі `vite.config.js`:
-```javascript
-export default defineConfig({
-  server: {
-    port: 3000,
-    open: true
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: true
-  }
-});
-```
-
-## 📝 Методологія CSS
-
-Проєкт використовує **BEM (Block Element Modifier)**:
-```scss
-.block {}
-.block__element {}
-.block__element--modifier {}
-
-// Приклад:
-.game-card {}
-.game-card__image {}
-.game-card__button {}
-.game-card__button--primary {}
-```
-
-## 🚀 Розгортання
-
-### Netlify
-
-1. Зв'яжіть репозиторій з Netlify
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-
-### Vercel
-
-1. Імпортуйте проєкт у Vercel
-2. Він автоматично визначить Vite
-3. Deploy!
-
-### GitHub Pages
-```bash
-npm run build
-# Завантажте вміст папки dist/ на gh-pages branch
-```
-
-## 🤝 Контрибьюція
-
-1. Fork проєкту
-2. Створіть feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit зміни (`git commit -m 'Add some AmazingFeature'`)
-4. Push в branch (`git push origin feature/AmazingFeature`)
-5. Відкрийте Pull Request
-
-## 📄 Ліцензія
-
-Цей проєкт має відкриту ліцензію - дивіться файл LICENSE для деталей.
-
-## 👤 Автор
-
-Ваше ім'я - [@your-username](https://github.com/your-username)
-
-## 🙏 Подяки
-
-- [Vite](https://vitejs.dev/) за швидкий збірник
-- [Google Fonts](https://fonts.google.com/) за шрифт Rubik
-- Дизайн натхненний сучасними казино платформами
-
-## 📞 Підтримка
-
-Якщо у вас виникли проблеми або питання:
-- Створіть [Issue](https://github.com/your-username/casino-games/issues)
-- Напишіть на email: your-email@example.com
-
----
-
-**Зроблено з ❤️ для гемблінг індустрії**
