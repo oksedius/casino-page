@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as *;
+
+.header {
+  background: $primary-bg;
+  padding: 16px 0;
+  border-bottom: 1px solid $border-color;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0 20px;
+
+  @media (max-width: 375px) {
+    margin: 24px 0 16px;
+  }
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: $text-primary;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}
+
+.show-all-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  color: $text-secondary;
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: $accent-blue;
+    color: $text-primary;
+  }
+
+  @media (max-width: 375px) {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,58 @@
+export const carouselGames = [
+  {
+    id: 1,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 2,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 3,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 4,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 5,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 6,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 7,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+  {
+    id: 8,
+    name: "Game name",
+    money: "400$",
+    user: "User***-",
+    image: "./src/assets/images/Thumb.png",
+  },
+];

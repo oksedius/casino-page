@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: $secondary-bg;
+  color: $text-primary;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 375px) {
+    padding: 0 16px;
+  }
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: $text-primary;
+  flex-shrink: 0;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}

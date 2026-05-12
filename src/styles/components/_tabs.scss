@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as *;
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+
+  @media (max-width: 375px) {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: $text-primary;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 12px;
+
+    &.active {
+      background: transparent;
+      border-color: $accent-orange;
+      color: $text-primary;
+    }
+
+    @media (max-width: 375px) {
+      padding: 8px 20px;
+      font-size: 13px;
+    }
+  }
+}
